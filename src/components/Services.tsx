@@ -108,7 +108,7 @@ function ServiceCard({ service, index }) {
       {/* description */}
       <p className="text-sm text-white/55 leading-relaxed flex-1">{service.description}</p>
 
-      {/* learn more */}
+      {/* learn more 
       <div className="flex items-center gap-1 mt-auto">
         <span
           className={`text-xs font-semibold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}
@@ -120,7 +120,7 @@ function ServiceCard({ service, index }) {
           className={`transition-transform duration-300 ${hovered ? "translate-x-1" : ""}`}
           style={{ color: service.accent }}
         />
-      </div>
+      </div>*/}
     </div>
   );
 }
@@ -128,7 +128,7 @@ function ServiceCard({ service, index }) {
 /* ─── main page ─── */
 export default function Services() {
   return (
-    <div className="relative min-h-screen bg-[#080b14] text-white overflow-hidden py-24 px-4">
+    <div  id="services" className="relative  min-h-screen bg-[#080b14] text-white overflow-hidden py-24 px-4">
       {/* ── background blobs ── */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div

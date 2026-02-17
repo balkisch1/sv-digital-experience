@@ -32,6 +32,16 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
+  const scrollToSection = (href: string) => {
+    const id = href.startsWith("#") ? href.slice(1) : href;
+    const el = document.getElementById(id);
+    if (!el) return;
+    const nav = document.querySelector("nav");
+    const offset = nav ? nav.clientHeight : 80;
+    const y = el.getBoundingClientRect().top + window.pageYOffset - offset - 8;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+
   return (
     <>
       <nav
@@ -47,7 +57,6 @@ const Navbar = () => {
         />
 
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-
 
           <a href="#" className="group relative flex items-center gap-2">
             <div className="absolute -inset-2 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -79,7 +88,11 @@ const Navbar = () => {
               <a
                 key={l.href}
                 href={l.href}
-                onClick={() => setActiveLink(l.href)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActiveLink(l.href);
+                  scrollToSection(l.href);
+                }}
                 className="group relative px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white transition-all duration-300"
               >
                 <span className="absolute inset-0 rounded-lg bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -126,7 +139,12 @@ const Navbar = () => {
                 <a
                   key={l.href}
                   href={l.href}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMobileOpen(false);
+                    setActiveLink(l.href);
+                    setTimeout(() => scrollToSection(l.href), 150);
+                  }}
                   className="group flex items-center justify-between px-4 py-3.5 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-300"
                   style={{ animationDelay: `${i * 0.05}s` }}
                 >
