@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
 
         {/* Enhanced headline with better gradient */}
-        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] tracking-tight mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
+        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl sm:text-8xl font-extrabold leading-[1.1] tracking-tight mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
           <span className="block mb-2">We Build Digital</span>
           <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.5)]">
             Experiences That Convert
@@ -77,8 +77,8 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5 opacity-0 animate-fade-up" style={{ animationDelay: "0.55s" }}>
           <Button 
             variant="gold" 
-            size="lg" 
-            className="text-lg px-10 py-6 rounded-full shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 group" 
+            size="sm" 
+            className="text-sm px-10 py-6 rounded-full shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 group" 
             asChild
           >
             <a href="#contact">
@@ -89,7 +89,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="text-lg px-10 py-6 rounded-full bg-white/5 border-2 border-white/20 backdrop-blur-sm hover:bg-white/10 hover:border-white/40 transition-all duration-300 hover:scale-105 group" 
+            className="text-sm px-10 py-6 rounded-full bg-white/5 border-2 border-white/20 backdrop-blur-sm hover:bg-white/10 hover:border-white/40 transition-all duration-300 hover:scale-105 group" 
             asChild
           >
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">

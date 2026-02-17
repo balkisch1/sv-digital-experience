@@ -57,7 +57,7 @@ const About = () => {
 
             {/* Description */}
             <div className="space-y-5 opacity-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-sm text-gray-300 leading-relaxed">
                 <span className="font-semibold text-purple-300">SV Digital Studio</span> is a Tunisian creative agency specializing in digital marketing,
                 content creation, and web design. We partner with brands, entrepreneurs, and
                 businesses to build powerful online presences that{" "}
@@ -66,7 +66,7 @@ const About = () => {
                   <span className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-purple-400" />
                 </span>.
               </p>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-sm text-gray-300 leading-relaxed">
                 Our team blends{" "}
                 <span className="text-pink-300 font-semibold">creative storytelling</span> with{" "}
                 <span className="text-purple-300 font-semibold">performance marketing strategies</span>,
@@ -156,7 +156,7 @@ const About = () => {
                       <div className={`font-display text-4xl md:text-5xl font-extrabold mb-1 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
                         {item.stat}
                       </div>
-                      <div className="text-base font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
+                      <div className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
                         {item.label}
                       </div>
                     </div>

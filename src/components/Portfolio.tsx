@@ -99,7 +99,7 @@ const Portfolio = () => {
             </span>
           </h2>
           
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <p className="text-sm md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             A glimpse into the brands we've helped grow through creative strategy and digital execution.
           </p>
         </div>
@@ -229,7 +229,7 @@ const Portfolio = () => {
             <p className="text-gray-400 max-w-xl">
               Every great project starts with a conversation. Share your vision and let's turn it into reality.
             </p>
-            <button className="group mt-2 px-10 py-5 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 hover:from-purple-600 hover:via-pink-600 hover:to-blue-600 font-bold text-lg transition-all duration-300 hover:scale-105 shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 relative overflow-hidden">
+            <button className="group mt-2 px-10 py-5 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 hover:from-purple-600 hover:via-pink-600 hover:to-blue-600 font-bold text-sm transition-all duration-300 hover:scale-105 shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 relative overflow-hidden">
               <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <span className="relative flex items-center gap-2">
                 Start Your Project

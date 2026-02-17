@@ -132,7 +132,7 @@ const Navbar = () => {
                 <a
                   href="#contact"
                   onClick={() => setMobileOpen(false)}
-                  className="group relative flex items-center justify-center gap-2 w-full px-6 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-base font-bold text-white transition-all duration-300 overflow-hidden shadow-lg shadow-purple-500/25"
+                  className="group relative flex items-center justify-center gap-2 w-full px-6 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-sm font-bold text-white transition-all duration-300 overflow-hidden shadow-lg shadow-purple-500/25"
                 >
                   <span className="relative flex items-center gap-2">
                     Book a Consultation

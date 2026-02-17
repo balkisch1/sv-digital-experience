@@ -108,7 +108,7 @@ const Services = () => {
             </span>
           </h2>
           
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <p className="text-sm md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             From concept to execution, we craft every detail to help your brand stand out in the digital space.
           </p>
         </div>
