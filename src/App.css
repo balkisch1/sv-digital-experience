@@ -40,3 +40,87 @@
 .read-the-docs {
   color: #888;
 }
+
+:root {
+  --color-background: #0b1220;
+  --color-primary: #d4af37; /* gold */
+  --color-electric: #7c5cff;
+  --color-muted-foreground: #94a3b8;
+}
+
+/* Fade-up entrance animation used by Hero.tsx */
+.animate-fade-up {
+  animation: fadeUp 700ms cubic-bezier(.2,.9,.2,1) both;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Soft glowing pulse for decorative elements */
+.animate-glow-pulse {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0% {
+    transform: scale(1);
+    filter: blur(40px) saturate(90%);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.03);
+    filter: blur(60px) saturate(120%);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(40px) saturate(90%);
+    opacity: 0.7;
+  }
+}
+
+/* Gold gradient text style used in the Hero heading */
+.text-gradient-gold {
+  background: linear-gradient(90deg, #ffd36b 0%, var(--color-primary) 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Helpful small utilities to reuse platform colors */
+.platform-bg-electric {
+  background-color: color-mix(in srgb, var(--color-electric) 8%, transparent);
+}
+.platform-bg-primary {
+  background-color: color-mix(in srgb, var(--color-primary) 8%, transparent);
+}
+
+/* Map commonly used Tailwind-like color utility classes (escaped where needed) */
+.bg-background {
+  background-color: var(--color-background);
+}
+.bg-background\/75 {
+  background-color: color-mix(in srgb, var(--color-background) 75%, transparent);
+}
+.bg-primary\/5 {
+  background-color: color-mix(in srgb, var(--color-primary) 5%, transparent);
+}
+.bg-electric\/5 {
+  background-color: color-mix(in srgb, var(--color-electric) 5%, transparent);
+}
+.border-primary\/30 {
+  border-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.text-muted-foreground {
+  color: var(--color-muted-foreground);
+}
+

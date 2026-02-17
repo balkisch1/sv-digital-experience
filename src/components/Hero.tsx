@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
 
       {/* Glow accents */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-electric/5 blur-[120px] animate-glow-pulse" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-electric/5 blur-[120px] animate-glow-pulse" style={{ animationDelay: "0s" }} />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-primary/5 blur-[100px] animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
